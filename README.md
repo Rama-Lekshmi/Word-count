@@ -6,21 +6,36 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-
+Get the file name as the input from the user
 ### Step 2: 
- 
+Open the file using the withopen function
 ### Step 3: 
-
+Use for loop and split function
 ### Step 4:  
-
+Print the program
 ### Step 5: 
-
-### Step 6: 
+End the program
 
 ## PROGRAM:
+```python
+
+Developed by : Rama E.K. Lekshmi
+Ref No : 22009028
+import sys
+count = {}
+with open(sys.argv[1],'r') as f:
+for line in f :
+for word in line.split():
+if word not in count:
+count[word] = 1
+else:
+count[word] += 1
+print(count)
+f.close()
+```
 
 ### OUTPUT:
-
+![](bot.jpeg)
 
 
 ## RESULT:
