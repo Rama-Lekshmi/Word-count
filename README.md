@@ -31,7 +31,7 @@ print('Number of words: ',num_words)
 ```
 
 ### OUTPUT:
-![](batp.jpeg)
+![](batp1.jpeg)
 
 ## RESULT:
 Thus the program is written to find the word count from a text.
