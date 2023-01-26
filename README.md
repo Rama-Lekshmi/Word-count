@@ -21,22 +21,17 @@ End the program
 
 Developed by : Rama E.K. Lekshmi
 Ref No : 22009028
-import sys
-count = {}
-with open(sys.argv[1],'r') as f:
-for line in f :
-for word in line.split():
-if word not in count:
-count[word] = 1
-else:
-count[word] += 1
-print(count)
-f.close()
+fname = input('Enter file name: ')
+num_words = 0
+with open (fname, 'r') as f:
+for line in f:
+words = line.split()
+num_words += len(words)
+print('Number of words: ',num_words)
 ```
 
 ### OUTPUT:
-![](bot.jpeg)
-
+![](batp.jpeg)
 
 ## RESULT:
 Thus the program is written to find the word count from a text.
